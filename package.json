@@ -29,6 +29,7 @@
   },
   "devDependencies": {
     "@logicer/eslint-plugin": "^1.2.0",
+    "@logicer/prettier-config": "^1.0.1",
     "@types/node": "^18.16.19",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
