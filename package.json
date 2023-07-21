@@ -27,10 +27,10 @@
     "node": "^18.14.2"
   },
   "devDependencies": {
-    "@logicer/eslint-plugin": "^1.1.0",
+    "@logicer/eslint-plugin": "^1.2.0",
     "@types/node": "^18.16.19",
-    "@typescript-eslint/eslint-plugin": "^5.60.0",
-    "@typescript-eslint/parser": "^5.60.0",
+    "@typescript-eslint/eslint-plugin": "^6.1.0",
+    "@typescript-eslint/parser": "^6.1.0",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-eslint-plugin": "^5.1.0",
