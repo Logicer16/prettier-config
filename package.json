@@ -1,0 +1,42 @@
+{
+  "name": "@logicer/prettier-config",
+  "version": "1.0.0",
+  "description": "Logicer's Prettier Base Configuration",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc && node dist/index.js",
+    "style": "npm run lint && npm run prettier",
+    "lint": "eslint 'src/**/*.{js,ts}' --fix",
+    "lint:ci": "eslint 'src/**/*.{js,ts}'",
+    "prettier": "prettier --write .",
+    "prettier:ci": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Logicer16/prettier-config.git"
+  },
+  "author": "logicer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Logicer16/prettier-config/issues"
+  },
+  "homepage": "https://github.com/Logicer16/prettier-config#readme",
+  "engines": {
+    "node": "^18.14.2"
+  },
+  "devDependencies": {
+    "@logicer/eslint-plugin": "^1.1.0",
+    "@types/node": "^18.16.19",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-eslint-plugin": "^5.1.0",
+    "eslint-plugin-jsdoc": "^46.4.3",
+    "eslint-plugin-prettier": "^5.0.0",
+    "prettier": "3.0.0",
+    "typescript": "^5.0.4"
+  }
+}
