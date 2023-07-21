@@ -22,6 +22,8 @@ In any valid [Prettier config file](https://prettier.io/docs/en/configuration.ht
 ```
 
 You can also extend upon the configuration by adding importing it into a `.prettierrc.js` file. For example:
+
+<!-- prettier-ignore-start -->
 ```js
 import logicerPrettierConfig from "@logicer/prettier-config";
 
@@ -30,5 +32,6 @@ export default {
   // ... Your modifications
 };
 ```
+<!-- prettier-ignore-end -->
 
 Additionally, an accompanying recommended `.editorconfig` file is available [here](https://github.com/logicer/prettier-config/blob/main/.editorconfig)
