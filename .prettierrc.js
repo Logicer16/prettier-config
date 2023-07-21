@@ -1,1 +1,1 @@
-export default "@logicer/prettier-config"
+export default "@logicer/prettier-config";
