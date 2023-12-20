@@ -3,7 +3,7 @@
 [![npm (scoped)](https://img.shields.io/npm/v/%40logicer/prettier-config)](https://www.npmjs.com/package/@logicer/prettier-config)
 [![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/Logicer16/prettier-config/style.yml)](https://github.com/Logicer16/prettier-config/actions)
 [![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/Logicer16/prettier-config)](https://github.com/Logicer16/prettier-config/graphs/contributors)
-[![Type Coverage](https://img.shields.io/badge/dynamic/json.svg?label=type-coverage&prefix=%E2%89%A5&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2FLogicer16%2Fprettier-config%2Fmain%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
+[![Type Coverage](https://img.shields.io/badge/dynamic/json.svg?label=type%20coverage&suffix=%&query=$.typeCoverage.atLeast&uri=https%3A%2F%2Fraw.githubusercontent.com%2FLogicer16%2Fprettier-config%2Fmain%2Fpackage.json)](https://github.com/plantain-00/type-coverage)
 
 Logicer's Prettier configuration for use in other projects. Able to be built upon for the project's specific needs.
 
