@@ -35,7 +35,7 @@
     "@logicer/tsconfig": "^4.0.0",
     "@types/node": "^20.8.7",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
-    "@typescript-eslint/parser": "^6.1.0",
+    "@typescript-eslint/parser": "^7.0.1",
     "eslint": "^8.43.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-deprecation": "^2.0.0",
