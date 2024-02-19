@@ -30,7 +30,7 @@
     "node": "^20.8.0"
   },
   "devDependencies": {
-    "@logicer/eslint-plugin": "^2.0.0",
+    "@logicer/eslint-plugin": "^4.0.3",
     "@logicer/prettier-config": "^2.0.0",
     "@logicer/tsconfig": "^4.0.0",
     "@types/node": "^20.8.7",
