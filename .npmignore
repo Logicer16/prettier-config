@@ -1,1 +1,14 @@
+.github/
+.type-coverage/
+.vscode/
+src/
+.gitattributes
+.gitignore
+.nvmrc
+.prettierignore
+.prettierrc.js
 .tsbuildinfo
+eslint.config.js
+tsconfig.eslint.json
+tsconfig.json
+*.tsbuildinfo

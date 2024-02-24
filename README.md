@@ -7,6 +7,8 @@
 
 Logicer's Prettier configuration for use in other projects. Able to be built upon for the project's specific needs.
 
+An accompanying recommended `.editorconfig` file is available [here](https://github.com/logicer/prettier-config/blob/main/.editorconfig)
+
 ## Install
 
 ```sh
@@ -35,4 +37,54 @@ export default {
 ```
 <!-- prettier-ignore-end -->
 
-Additionally, an accompanying recommended `.editorconfig` file is available [here](https://github.com/logicer/prettier-config/blob/main/.editorconfig)
+### Advanced
+
+This modules also exports `prettierConfigGenerator(options)`. This produces a prettier config with appropriate plugins enabled and configured based the the options provided. The options should match those passed to [`@logicer/eslint-plugin`'s `configGenerator()`](https://github.com/Logicer16/eslint-plugin?tab=readme-ov-file#usage)
+
+For example, in your `.prettierrc.js`:
+
+```js
+import {options} from "./eslint.config.js";
+import {prettierConfigGenerator} from "@logicer/prettier-config";
+
+export default prettierConfigGenerator(options);
+```
+
+If you create multiple generator instances in your `eslint.config.js`, it is recommended you either make use of [overrides](https://prettier.io/docs/en/configuration.html#configuration-overrides) or pass a combination of the option sets, choosing the most featureful settings where appropriate
+
+For example, in your `.prettierrc.js`:
+
+```js
+import {prettierConfigGenerator} from "@logicer/prettier-config";
+
+const optionsA = {
+  ecmaVersion: 2017,
+  javascript: true,
+  jest: true
+};
+
+const optionsB = {
+  ecmaVersion: 2017,
+  javascript: true,
+  jsdoc: true,
+  prettier: true,
+  typescript: true
+};
+
+const resultingOptions = {
+  // Use the highest ecmaVersion used in the configs.
+  ecmaVersion: 2020,
+  // Keep identical options as is.
+  javascript: true,
+  // Enable options that are enabled in at least one option set.
+  jest: true,
+  jsdoc: true,
+  prettier: true,
+  typescript: true
+
+  // Omitted options remain disabled by default.
+  // svelte: false
+};
+
+export default prettierConfigGenerator(resultingOptions);
+```
