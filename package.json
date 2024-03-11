@@ -32,7 +32,7 @@
   "devDependencies": {
     "@logicer/eslint-plugin": "^4.0.3",
     "@logicer/prettier-config": "file:.",
-    "@logicer/tsconfig": "^4.0.0",
+    "@logicer/tsconfig": "^5.0.1",
     "@types/eslint": "^8.56.3",
     "@types/node": "^20.8.7",
     "eslint": "^8.43.0",
